@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PW-III Codelgniter - Cadastro</title>
+    <title>PW-III Codelgniter - Cadastrooo</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/csscadastro.css"); ?>"/>
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>

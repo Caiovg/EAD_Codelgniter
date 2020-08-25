@@ -24,10 +24,10 @@
 
     <!-- As a heading -->
     <nav class="navbar navbar bg borda">
-        <span class="navbar-brand mb-0 h1 logo"><img src="<?php echo base_url("assets/imagens/logo.png.png")?>" alt=""></span>
+        <span class="navbar-brand mb-0 h1 logo"><a href="<?php echo base_url("index.php/Welcome/index"); ?>"><img src="<?php echo base_url("assets/imagens/logo.png.png")?>" alt=""></a></span>
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
+                <a class="nav-link" href="<?php echo base_url("index.php/Welcome/index"); ?>">Início</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Produtos</a>
@@ -36,13 +36,13 @@
                 <a class="nav-link active" href="#">Login</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Cadastro</a>
+                <a class="nav-link" href="<?php echo base_url("index.php/Welcome/cadastro");?>">Cadastro</a>
             </li>
         </ul>
     </nav>
     <div id="login-container">
         <h1>Login</h1>
-        <form action="">
+        <form action="<?php echo base_url("index.php/login/validarLogin");?>">
             <label for="email">E-mail</label>
             <input type="text" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
             <label for="password">Senha</label>
@@ -58,7 +58,7 @@
         </div>
         <div id="register-container">
             <p>Ainda não tem uma conta?</p>
-            <a href="#">Registrar</a>
+            <a href="<?php echo base_url("index.php/Welcome/cadastro");?>">Registrar</a>
         </div>
     </div>
 

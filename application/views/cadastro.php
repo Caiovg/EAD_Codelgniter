@@ -10,16 +10,16 @@
 </head>
 <body>
     <nav class="navbar navbar bg borda">
-        <span class="navbar-brand mb-0 h1 logo"><img src="<?php echo base_url("assets/imagens/logo.png.png")?>" alt=""></span>
+        <span class="navbar-brand mb-0 h1 logo"><a href="<?php echo base_url("index.php/Welcome/index"); ?>"><img src="<?php echo base_url("assets/imagens/logo.png.png")?>" alt=""></a></span>
         <ul class="nav justify-content-end">
             <li class="nav-item">
-                <a class="nav-link" href="#">Início</a>
+                <a class="nav-link" href="<?php echo base_url("index.php/Welcome/index"); ?>">Início</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#">Produtos</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Login</a>
+                <a class="nav-link" href="<?php echo base_url("index.php/Welcome/login"); ?>">Login</a>
             </li>
             <li class="nav-item">
                 <a class="nav-link active" href="#">Cadastro</a>

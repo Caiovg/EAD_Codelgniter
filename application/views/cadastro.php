@@ -6,7 +6,16 @@
     <title>PW-III Codelgniter - Cadastro</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/csscadastro.css"); ?>"/>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script>
+    $(document).ready(function () { 
+        $("#CPF").mask("000.000.000-00", {reverse: true})
+        $("#Nascimento").mask("00/00/0000")
+        $("#RG").mask("00.000.000-00")
+        $("#Celular").mask("(00)00000-0000")
+    });
+</script>
+
 </head>
 <body>
     <nav class="navbar navbar bg borda">
@@ -111,7 +120,8 @@
     </div>
 	</section>
 
-<script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery-3.1.1.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap.js"); ?>"></script>
 </body>
 </html>

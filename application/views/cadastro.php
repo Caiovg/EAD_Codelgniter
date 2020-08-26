@@ -41,7 +41,7 @@
             <br><br>
             <h1 class="display-4 texto titulo">CADASTRA-SE</h1>
             <br><br>
-            <form action="../controller/validarCadastro.php" method="POST" id="Cadastro" enctype="multipart/form-data">
+            <form action="<?php echo base_url("index.php/cadastro/validarCadastro");?>" method="POST" id="Cadastro" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="col">
                         <label for="inputNome" class="texto"><h3>Nome</h3></label>
@@ -120,8 +120,11 @@
     </div>
 	</section>
 
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/popper.js/dist/umd/popper.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/sweetalert2/dist/sweetalert2.all.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/javascript/validar.js"); ?>"></script>
+
 </body>
 </html>

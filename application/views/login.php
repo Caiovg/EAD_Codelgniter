@@ -42,7 +42,7 @@
     </nav>
     <div id="login-container">
         <h1>Login</h1>
-        <form action="<?php echo base_url("index.php/login/validarLogin");?>">
+        <form action="<?php echo base_url("index.php/login/validarLogin");?>" method="POST" id="login">
             <label for="email">E-mail</label>
             <input type="text" name="email" id="email" placeholder="Digite seu e-mail" autocomplete="off">
             <label for="password">Senha</label>
@@ -62,7 +62,11 @@
         </div>
     </div>
 
-    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery-3.1.1.js"); ?>"></script>
-    <script type="text/javascript" src="<?php echo base_url("assets/node_modules/bootstrap.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/popper.js/dist/umd/popper.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/node_modules/sweetalert2/dist/sweetalert2.all.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/javascript/validar.js"); ?>"></script>
+
 </body>
 </html>

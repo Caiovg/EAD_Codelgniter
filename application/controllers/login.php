@@ -9,12 +9,14 @@ class login extends CI_Controller {
         $senha = $this->input->post("senha");
 
         if(empty($usuario)){
-            echo "ErroEmail";  
+            echo "ErroUser";  
             die();      
         }
         if(empty($senha)){
-            echo "ErroSenha";
-            die();    
+            echo "ErroPass";
+            exit();    
         }
+
+        echo "SucessoCliente";
     }
 }

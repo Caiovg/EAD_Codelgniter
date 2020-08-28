@@ -23,9 +23,13 @@ class cadastro extends CI_Controller {
             //echo "ErroNome";
             die("camposvazios");//os dois e a mesma coisa.
         }
-        if(empty($Nome)){
+        if(empty($Nome) || is_null($Nome)){
             //echo "ErroNome";
             die("ErroNome");//os dois e a mesma coisa.
+        }
+        if(rtrim($Nome)){
+            echo "Preencha o nome com no mínimo 2 caracteres.";
+            die();
         }
         if(empty($Sobrenome)){
             die("ErroSobrenome");
@@ -38,12 +42,20 @@ class cadastro extends CI_Controller {
             echo "ErroCPF";
             die();
         }
+        if($CPF !=13){
+            echo "CPf deve 13";
+            die();
+        }
         if(empty($Nascimento)){
             echo "ErroNascimento";
             die();
         }
         if(empty($RG)){
             echo "ErroRG";
+            die();
+        }
+        if($RG != 14){
+            echo "CPf deve 13";
             die();
         }
         if(empty($Email)){

@@ -7,14 +7,14 @@
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/csscadastro.css"); ?>"/>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
-    <script>
+<!--<script>
     $(document).ready(function () { 
         $("#CPF").mask("000.000.000-00", {reverse: true})
         $("#Nascimento").mask("00/00/0000")
         $("#RG").mask("00.000.000-00")
         $("#Celular").mask("(00) 00000-0000")
     });
-</script>
+</script>-->
 
 </head>
 <body>
@@ -54,54 +54,76 @@
                         <input type="text" class="form-control mx-sm-3" id="Sobrenome" placeholder="Digite seu Sobrenome" name="Sobrenome" autocomplete="off">
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+                <div class="row mb-3">
+                    <div class="col-4 themed-grid-col">
                         <br>
-                        <label for="inputNomedeUsuario" class="texto"><h3>Nome de Usuario</h3></label>
+                        <label for="inputNomedeUsuario" class="texto"><h3>Username</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="NomedoUsuario" placeholder="Digite seu Nome de Úsuario" name="NomedoUsuario" autocomplete="off">
                     </div>
-                    <div class="form-group col-md-6">
+                    <div class="col-4 themed-grid-col">
                         <br>
                         <label for="inputCpf" class="texto"><h3>CPF</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="CPF" placeholder="Digite seu CPF" name="CPF" autocomplete="off">
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="inputNascimento" class="texto"><h3>Nascimento</h3></label>
+                    <div class="col-4 themed-grid-col">
                         <br>
-                        <input type="text" class="form-control mx-sm-3" id="Nascimento" placeholder="Digite sua Data de nascimento" name="Nascimento" autocomplete="off">
-                    </div>
-                    <div class="form-group col-md-6">
                         <label for="inputRG" class="texto"><h3>RG</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="RG" placeholder="Digite seu RG" name="RG" autocomplete="off">
                     </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+                <div class="row mb-3">
+                    <div class="col-lg-4 themed-grid-col">                      
+                        <label for="inputNascimento" class="texto"><h3>Nascimento</h3></label>
+                        <br>
+                        <input type="text" class="form-control mx-sm-3" id="Nascimento" placeholder="Data de nascimento" name="Nascimento" autocomplete="off">
+                    </div>
+                    <div class="col-lg-4 themed-grid-col">
+                        <label for="inputCelular" class="texto"><h3>Celular</h3></label>
+                        <input type="telefone" id="Celular" class="form-control mx-sm-3" placeholder="numero de Celular" name="Celular" autocomplete="off">
+                    </div>
+                    <div class="col-lg-4 themed-grid-col">
                         <label for="inputEmail4" class="texto"><h3>Email</h3></label>
                         <br>
                         <input type="email" class="form-control mx-sm-3" id="Email" placeholder="Digite Seu Email" name="Email" autocomplete="off">
-                    </div>  
-                    <div class="form-group col-md-6">
-                        <label for="inputCelular" class="texto"><h3>Celular</h3></label>
-                        <input type="telefone" id="Celular" class="form-control mx-sm-3" placeholder="Digite seu numero de Celular" name="Celular" autocomplete="off">
-                    </div>  
+                    </div>
                 </div>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
+                <div class="row mb-3">
+                    <div class="col-md-3 themed-grid-col">
+                        <label for="inputCEP" class="texto"><h3>CEP</h3></label>
+                        <br>
+                        <input type="text" class="form-control mx-sm-3" id="cep" placeholder="Digite Seu CEP" name="cep">
+                    </div>
+                    <div class="form-group col-md-9">
                         <label for="inputEndereco" class="texto"><h3>Endereço</h3></label>
                         <br>
-                        <input type="text" class="form-control mx-sm-3" id="Endereco" placeholder="Digite Seu Endereço" name="Endereco">
-                    </div>  
-                    <div class="form-group col-md-6">
-                        <label for="inputNumero" class="texto"><h3>Numero</h3></label>
-                        <input type="text" id="Numero" class="form-control mx-sm-3" placeholder="Digite o numero do seu endereço" name="Numero">
-                    </div>  
+                        <input type="text" class="form-control mx-sm-3" id="rua"  name="rua">
+                    </div>       
                 </div>
+                <div class="row mb-3">
+                    <div class="col-lg-3 themed-grid-col">                      
+                        <label for="inputNumero" class="texto"><h3>Numero</h3></label>
+                        <br>
+                        <input type="text" class="form-control mx-sm-3" id="Numero" placeholder="Digite seu numero" name="Numero" autocomplete="off">
+                    </div>
+                    <div class="col-lg-3 themed-grid-col">
+                        <label for="inputBairro" class="texto"><h3>Bairro</h3></label>
+                        <input type="text" id="bairro" class="form-control mx-sm-3" placeholder="Digite seu Bairro" name="bairro" autocomplete="off">
+                    </div>
+                    <div class="col-lg-3 themed-grid-col">
+                        <label for="inputCidade" class="texto"><h3>Cidade</h3></label>
+                        <br>
+                        <input type="text" class="form-control mx-sm-3" id="cidade" placeholder="Digite Seu Cidade" name="cidade" autocomplete="off">
+                    </div>
+                    <div class="col-lg themed-grid-col">
+                        <label for="inputUF" class="texto"><h3>UF</h3></label>
+                        <br>
+                        <input type="text" class="form-control mx-sm-3" id="uf" placeholder="uf" name="uf" autocomplete="off">
+                    </div>
+                </div>
+            
                 <div class="form-row">
                     <div class="form-group col-md-6">
                         <label for="inputPassword6" class="texto"><h3>Senha</h3></label>
@@ -124,7 +146,7 @@
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/sweetalert2/dist/sweetalert2.all.js"); ?>"></script>
-<script type="text/javascript" src="<?php echo base_url("assets/javascript/validar.js"); ?>"></script>
+
 
 </body>
 </html>

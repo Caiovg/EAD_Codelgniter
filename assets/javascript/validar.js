@@ -135,6 +135,14 @@ $(function(){
                 confirmButtonText: 'Legal, vou refazer'
                 });
             }
+            if(data == "CPfdeve11"){
+              Swal.fire({
+              title: 'Erro ao preencher campos!',
+              text: 'Campo CPF deve conter 11 digitos!',
+              icon: 'error',
+              confirmButtonText: 'Legal, vou refazer'
+              });
+          }
           if(data == "ErroCPFExiste"){
             Swal.fire({
               title: 'Erro ao preencher campos!',
@@ -199,6 +207,14 @@ $(function(){
               confirmButtonText: 'Legal, vou refazer'
             });
           }
+          if(data == "ErroCep"){
+            Swal.fire({
+              title: 'Erro ao preencher campos!',
+              text: 'Campo Cep Obrigatorio!',
+              icon: 'error',
+              confirmButtonText: 'Legal, vou refazer'
+            });
+          }
           if(data == "ErroEndereco"){
             Swal.fire({
               title: 'Erro ao preencher campos!',
@@ -219,6 +235,30 @@ $(function(){
             Swal.fire({
               title: 'Erro ao preencher campos!',
               text: 'Campo Numero não pode conter letras ou caracteres especiais!',
+              icon: 'error',
+              confirmButtonText: 'Legal, vou refazer'
+            });
+          }
+          if(data == "ErroBairro"){
+            Swal.fire({
+              title: 'Erro ao preencher campos!',
+              text: 'Campo Bairro Obrigatorio!',
+              icon: 'error',
+              confirmButtonText: 'Legal, vou refazer'
+            });
+          }
+          if(data == "Errocidade"){
+            Swal.fire({
+              title: 'Erro ao preencher campos!',
+              text: 'Campo Cidade Obrigatorio!',
+              icon: 'error',
+              confirmButtonText: 'Legal, vou refazer'
+            });
+          }
+          if(data == "Errouf"){
+            Swal.fire({
+              title: 'Erro ao preencher campos!',
+              text: 'Campo UF Obrigatorio!',
               icon: 'error',
               confirmButtonText: 'Legal, vou refazer'
             });

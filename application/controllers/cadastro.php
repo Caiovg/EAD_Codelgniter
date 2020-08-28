@@ -13,7 +13,11 @@ class cadastro extends CI_Controller {
         $RG = $this->input->post('RG');
         $Email = $this->input->post('Email');
         $Celular = $this->input->post('Celular');
-        $Endereco = $this->input->post('Endereco');
+        $Cep = $this->input->post('cep');
+        $Endereco = $this->input->post('logradouro');
+        $Bairro = $this->input->post('bairro');
+        $UF = $this->input->post('uf');
+        $Cidade = $this->input->post('localidade');
         $Numero = $this->input->post('Numero');
         $Senha = $this->input->post('Senha');
         $Confisenha = $this->input->post('Confisenha');
@@ -27,10 +31,6 @@ class cadastro extends CI_Controller {
             //echo "ErroNome";
             die("ErroNome");//os dois e a mesma coisa.
         }
-        if(rtrim($Nome)){
-            echo "Preencha o nome com no mínimo 2 caracteres.";
-            die();
-        }
         if(empty($Sobrenome)){
             die("ErroSobrenome");
         }
@@ -42,28 +42,28 @@ class cadastro extends CI_Controller {
             echo "ErroCPF";
             die();
         }
-        if($CPF !=13){
-            echo "CPf deve 13";
-            die();
-        }
-        if(empty($Nascimento)){
-            echo "ErroNascimento";
+        if($CPF <= 14){
+            echo "CPfdeve11";
             die();
         }
         if(empty($RG)){
             echo "ErroRG";
             die();
         }
-        if($RG != 14){
-            echo "CPf deve 13";
+        if(empty($Nascimento)){
+            echo "ErroNascimento";
+            die();
+        }
+        if(empty($Celular)){
+            echo "ErroCelular";
             die();
         }
         if(empty($Email)){
             echo "ErroEmail";
             die();
         }
-        if(empty($Celular)){
-            echo "ErroCelular";
+        if(empty($Cep)){
+            echo "ErroCep";
             die();
         }
         if(empty($Endereco)){
@@ -76,6 +76,15 @@ class cadastro extends CI_Controller {
         }
         if(!is_numeric($Numero)){
             die("Erroletra");
+        }
+        if(empty($Bairro)){
+            die("ErroBairro");
+        }
+        if(empty($Cidade)){
+            die("Errocidade");
+        }
+        if(empty($UF)){
+            die("Errouf");
         }
         if(empty($Senha)){
             die("ErroSenha");

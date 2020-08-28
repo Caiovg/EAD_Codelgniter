@@ -99,7 +99,7 @@
                     <div class="form-group col-md-9">
                         <label for="inputEndereco" class="texto"><h3>Endereço</h3></label>
                         <br>
-                        <input type="text" class="form-control mx-sm-3" id="rua"  name="rua">
+                        <input type="text" class="form-control mx-sm-3" id="logradouro"  name="logradouro">
                     </div>       
                 </div>
                 <div class="row mb-3">
@@ -115,7 +115,7 @@
                     <div class="col-lg-3 themed-grid-col">
                         <label for="inputCidade" class="texto"><h3>Cidade</h3></label>
                         <br>
-                        <input type="text" class="form-control mx-sm-3" id="cidade" placeholder="Digite Seu Cidade" name="cidade" autocomplete="off">
+                        <input type="text" class="form-control mx-sm-3" id="localidade" placeholder="Digite Seu Cidade" name="localidade" autocomplete="off">
                     </div>
                     <div class="col-lg themed-grid-col">
                         <label for="inputUF" class="texto"><h3>UF</h3></label>
@@ -146,6 +146,7 @@
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/sweetalert2/dist/sweetalert2.all.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/javascript/main.js"); ?>"></script>
 
 
 </body>

@@ -1,5 +1,5 @@
 $(function(){
-    $('#login').submit(function(){
+    $('#login').submit(function(){//se vc quiser fazer alguma validção de submit vc pode fazer de um onclick
         var obj = this;
         var form = $(obj);
         var dados = new FormData(obj);
@@ -27,7 +27,7 @@ $(function(){
                     confirmButtonText: 'Legal, vou refazer'
                 });
                 }   
-                if(data == "SucessoCliente"){
+                if(data == "LogadoSucesso"){
                   Swal.fire({
                     title: 'Login realizado com sucesso!',
                     icon: 'success',
@@ -287,47 +287,25 @@ $(function(){
                 confirmButtonText: 'Legal, vou refazer'
                 });
             }
-            if(data == "ErroBanco"){
+            if(data == "ErroCadastro"){
               Swal.fire({
-                title: 'Erro ao cadastrar!',
-                text: 'Não foi possivel efetuar o cadastro!',
+                title: 'Erro ao efetuar cadastrar!',
+                text: 'Não foi possivel efetuar o cadastro! Tente novamente',
                 icon: 'error',
-                confirmButtonText: 'Legal, vou refazer'
+                confirmButtonText: 'OK'
                 });
             }           
             if(data == "SucessoCliente"){
               Swal.fire({
-                title: 'Login realizado com sucesso!',
+                title: 'Cadastro realizado com sucesso!',
                 icon: 'success',
                 confirmButtonText: 'OK'
               }).then((result) => {
                 if (result.value){
-                  window.location.replace("");
+                  window.location.replace("login");
                 }
               })
-            }
-            if(data == "SucessoFuncionario"){
-              Swal.fire({
-                title: 'Login realizado com sucesso!',
-                icon: 'success',
-                confirmButtonText: 'OK'
-              }).then((result) => {
-                if (result.value){
-                  window.location.replace("../view/TelaFuncionario.php");
-                }
-              });
-            }
-            if(data == "SucessoADM"){
-              Swal.fire({
-                title: 'Login realizado com sucesso!',
-                icon: 'success',
-                confirmButtonText: 'OK'
-              }).then((result) => {
-                if (result.value){
-                  window.location.replace("../view/TelaAdm.php");
-                }
-              });
-            }         
+            }            
         },//success
       });//ajax
       return false;

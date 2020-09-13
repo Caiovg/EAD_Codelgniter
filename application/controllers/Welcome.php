@@ -9,11 +9,15 @@ class Welcome extends CI_Controller {
 	}
 	public function login()
 	{
-		$this->load->view('login');
+		$this->load->view('Telalogin');
 	}
 	public function cadastro()
 	{
-		$this->load->view('cadastro');
+		$this->load->view('Telacadastro');
+	}
+	public function produtos()
+	{
+		$this->load->view('Telaprodutos');
 	}
 
 }

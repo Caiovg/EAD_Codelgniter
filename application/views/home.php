@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PW-III Codelgniter - Inicio</title>
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
-	<link rel="stylesheet" href="<?php echo base_url("assets/css/csshome.css"); ?>"/>
-	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="shortcut icon" href="<?php echo base_url("assets/imagens/logo.png.png")?>" type="image/x-png"/>
+	  <link rel="stylesheet" href="<?php echo base_url("assets/css/csshome.css"); ?>"/>
+	  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <style>
     </style>
 </head>

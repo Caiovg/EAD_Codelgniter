@@ -1,9 +1,13 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login-PW-III Codelgniter - Login</title>
+    <title>PW-III Codelgniter - Login</title>
+    <link rel="shortcut icon" href="<?php echo base_url("assets/imagens/logo.png.png")?>" type="image/x-png"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/csslogin.css"); ?>"/>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PW-III Codelgniter - Cadastro</title>
+    <link rel="shortcut icon" href="<?php echo base_url("assets/imagens/logo.png.png")?>" type="image/x-png"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/node_modules/bootstrap/dist/css/bootstrap.css"); ?>"/>
     <link rel="stylesheet" href="<?php echo base_url("assets/css/csscadastro.css"); ?>"/>
     <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
@@ -75,50 +76,52 @@
                         <input type="text" class="form-control mx-sm-3" id="RG" placeholder="Digite seu RG" name="RG" autocomplete="off">
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <div class="col-lg-4 themed-grid-col">                      
+                <div class="form-row">
+                    <div class="col">                      
                         <label for="inputNascimento" class="texto"><h3>Nascimento</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="Nascimento" placeholder="Data de nascimento" name="Nascimento" autocomplete="off">
                     </div>
-                    <div class="col-lg-4 themed-grid-col">
+                    <div class="col">
                         <label for="inputCelular" class="texto"><h3>Celular</h3></label>
                         <input type="telefone" id="Celular" class="form-control mx-sm-3" placeholder="Numero de Celular" name="Celular" autocomplete="off">
                     </div>
-                    <div class="col-lg-4 themed-grid-col">
+                    <div class="col">
                         <label for="inputEmail4" class="texto"><h3>Email</h3></label>
                         <br>
                         <input type="email" class="form-control mx-sm-3" id="Email" placeholder="Digite Seu Email" name="Email" autocomplete="off">
                     </div>
                 </div>
-                <div class="row mb-3">
-                    <div class="col-md-3 themed-grid-col">
+                <div class="form-row">
+                    <div class="col-lg-2 themed-grid-col">
                         <label for="inputCEP" class="texto"><h3>CEP</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="cep" placeholder="Digite Seu CEP" name="cep">
                     </div>
-                    <div class="form-group col-md-9">
+                    <div class="col">
                         <label for="inputEndereco" class="texto"><h3>Endereço</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="logradouro" placeholder="Digite Seu Endereço" name="logradouro">
                     </div>       
                 </div>
-                <div class="row mb-3">
-                    <div class="col-lg-3 themed-grid-col">                      
+                <div class="form-row">
+                    <div class="col">                      
                         <label for="inputNumero" class="texto"><h3>Numero</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="Numero" placeholder="Digite seu numero" name="Numero" autocomplete="off">
                     </div>
-                    <div class="col-lg-3 themed-grid-col">
+                    <div class="col">
                         <label for="inputBairro" class="texto"><h3>Bairro</h3></label>
                         <input type="text" id="bairro" class="form-control mx-sm-3" placeholder="Digite seu Bairro" name="bairro" autocomplete="off">
                     </div>
-                    <div class="col-lg-3 themed-grid-col">
+                </div>
+                <div class="form-row">
+                    <div class="col">
                         <label for="inputCidade" class="texto"><h3>Cidade</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="localidade" placeholder="Digite Seu Cidade" name="localidade" autocomplete="off">
                     </div>
-                    <div class="col-lg themed-grid-col">
+                    <div class="col-lg-2 themed-grid-col">
                         <label for="inputUF" class="texto"><h3>UF</h3></label>
                         <br>
                         <input type="text" class="form-control mx-sm-3" id="uf" placeholder="Digite a UF" name="uf" autocomplete="off">
@@ -126,11 +129,11 @@
                 </div>
             
                 <div class="form-row">
-                    <div class="form-group col-md-6">
+                    <div class="col">
                         <label for="inputPassword6" class="texto"><h3>Senha</h3></label>
                         <input type="password" id="Senha" class="form-control mx-sm-3" placeholder="Digite sua senha" aria-describedby="passwordHelpInline" name="Senha">
                     </div>  
-                    <div class="form-group col-md-6">
+                    <div class="col">
                         <label for="inputPassword6" class="texto"><h3>Confime sua Senha</h3></label>
                         <input type="password" id="Confisenha" class="form-control mx-sm-3" placeholder="Digite confirme sua senha" aria-describedby="passwordHelpInline" name="Confisenha">
                     </div>  

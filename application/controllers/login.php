@@ -18,13 +18,14 @@ class login extends CI_Controller {
 
         $this->load->model('BuscarModel');
 
-        if($this->BuscarModel->BuscarUsuario($usuario, $senha)){
+        /*if($this->BuscarModel->BuscarUsuario($usuario, $senha)){
             echo "LogadoSucesso";
             die();
         }
         else{
             echo "FalhaLogin";
             exit();
-        }
+        }*/
+        
     }
 }

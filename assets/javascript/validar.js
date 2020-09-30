@@ -114,7 +114,7 @@ $(function(){
           if(data == "ErroNomedoUsuario"){
             Swal.fire({
               title: 'Erro ao preencher campos!',
-              text: 'Campo Nome do Usuário Obrigatorio!',
+              text: 'Campo UserName Obrigatorio!',
               icon: 'error',
               confirmButtonText: 'Legal, vou refazer'
             });
@@ -122,7 +122,7 @@ $(function(){
           if(data == "ErroUserNameExiste"){
             Swal.fire({
               title: 'Erro ao preencher campos!',
-              text: 'Nome do Usuario já cadastrado!',
+              text: 'UserName já cadastrado!',
               icon: 'error',
               confirmButtonText: 'Legal, vou refazer'
             });

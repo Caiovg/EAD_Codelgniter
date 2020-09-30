@@ -40,9 +40,9 @@
 	<section>
     <div class="container">
         <div class="=col-lg-9 text-center mr-auto ml-auto">
-            <br><br>
+            <br>
             <h1 class="display-4 texto titulo">CADASTRA-SE</h1>
-            <br><br>
+            <br>
             <form action="<?php echo base_url("index.php/cadastro/validarCadastro");?>" method="POST" id="Cadastro" enctype="multipart/form-data">
                 <div class="form-row">
                     <div class="col">
@@ -61,7 +61,7 @@
                         <br>
                         <label for="inputNomedeUsuario" class="texto"><h3>Username</h3></label>
                         <br>
-                        <input type="text" class="form-control mx-sm-3" id="NomedoUsuario" placeholder="Digite seu Nome de Úsuario" name="NomedoUsuario" autocomplete="off">
+                        <input type="text" class="form-control mx-sm-3" id="NomedoUsuario" placeholder="Digite seu Nome de Úsuario" name="UserName" autocomplete="off">
                     </div>
                     <div class="col-4 themed-grid-col">
                         <br>
@@ -92,6 +92,7 @@
                         <input type="email" class="form-control mx-sm-3" id="Email" placeholder="Digite Seu Email" name="Email" autocomplete="off">
                     </div>
                 </div>
+                <br>
                 <div class="form-row">
                     <div class="col-lg-2 themed-grid-col">
                         <label for="inputCEP" class="texto"><h3>CEP</h3></label>

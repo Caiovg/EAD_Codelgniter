@@ -27,7 +27,7 @@ $(function(){
                     confirmButtonText: 'Legal, vou refazer'
                 });
                 }   
-                if(data == "LogadoSucesso"){
+                if(data == "Sucesso"){
                   Swal.fire({
                     title: 'Login realizado com sucesso!',
                     icon: 'success',

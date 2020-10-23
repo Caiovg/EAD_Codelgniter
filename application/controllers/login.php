@@ -7,7 +7,7 @@ class login extends CI_Controller {
         
         $usuario = $this->input->post("email");
         $senha = $this->input->post("senha");
-        
+
         if(empty($usuario)){
             echo "ErroUser";  
             die();      
@@ -21,7 +21,7 @@ class login extends CI_Controller {
         $this->load->model('BuscarModel');
         $resultado = $this->BuscarModel->logarUsuario($usuario, $senha);
         
-        var_dump($resultado);
+        /*var_dump($resultado);*/
         if(empty($resultado)){
             echo "FalhaLogin";
         }else{

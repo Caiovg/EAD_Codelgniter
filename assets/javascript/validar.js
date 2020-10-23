@@ -27,14 +27,14 @@ $(function(){
                     confirmButtonText: 'Legal, vou refazer'
                 });
                 }   
-                if(data == "Sucesso"){
+                if(data == "SucessoCliente"){
                   Swal.fire({
                     title: 'Login realizado com sucesso!',
                     icon: 'success',
                     confirmButtonText: 'OK'
                   }).then((result) => {
                     if (result.value){
-                      window.location.replace("");
+                      window.location.replace("TelaCliente");
                     }
                   })
                 }
@@ -311,3 +311,76 @@ $(function(){
       return false;
     });
   });
+/*Cadastro de itens - tela Itens */
+$(function() {
+  $('#CadastroItens').submit(function() {
+      var obj = this;
+      var form = $(obj);
+      var dados = new FormData(obj);
+      $.ajax({
+          url: form.attr('action'),
+          type: form.attr('method'),
+          data: dados,
+          processData: false,
+          cache: false,
+          contentType: false,
+          success: function(data) {
+              if (data == "ErroNome") {
+                  Swal.fire({
+                      icon: 'warning',
+                      title: 'Erro ao preencher campos',
+                      text: 'O campo de nome está vazio!',
+                      confirmButtonColor: " #dc3545",
+                      confirmButtonText: 'OK',
+                  });
+              }
+              if (data == "ErroDescricao") {
+                  Swal.fire({
+                      icon: 'warning',
+                      title: 'Erro ao preencher campos',
+                      text: 'O campo de descrição está vazio!',
+                      confirmButtonColor: " #dc3545",
+                      confirmButtonText: 'OK'
+                  });
+              }
+              if (data == "ErroPreco") {
+                  Swal.fire({
+                      icon: 'warning',
+                      title: 'Erro ao preencher campos',
+                      text: 'O campo de preço está vazio!',
+                      confirmButtonColor: " #dc3545",
+                      confirmButtonText: 'OK'
+                  });
+              }
+              if (data == "ErroFoto") {
+                  Swal.fire({
+                      icon: 'warning',
+                      title: 'Erro ao preencher campos',
+                      text: 'Nenhuma foto foi selecionada!',
+                      confirmButtonColor: " #dc3545",
+                      confirmButtonText: 'OK'
+                  });
+              }
+              if (data == "Sucesso") {
+                  Swal.fire({
+                      icon: 'success',
+                      title: 'Cadastro realizado com sucesso!',
+                      text: 'Deseja cadastrar novamente ?',
+                          cancelButtonColor: "#d33",
+                          cancelButtonText: 'Não',
+                                      showCancelButton: true,  
+                          confirmButtonColor: "#3085d6",
+                          confirmButtonText: 'Sim'
+                  }).then((result) => {
+                      if (result.value){
+                        window.location.replace("");
+                      }else{
+                          window.location.replace("TelaItens");
+                      }
+                  })
+              }
+          }
+      })
+      return false;
+  })
+});

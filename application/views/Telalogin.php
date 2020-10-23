@@ -66,6 +66,7 @@
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/popper.js/dist/umd/popper.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/jquery/dist/jquery.mask.min.js"); ?>"></script>
+<script type="text/javascript" src="<?php echo base_url("assets/javascript/validar.js"); ?>"></script>
 <script type="text/javascript" src="<?php echo base_url("assets/node_modules/sweetalert2/dist/sweetalert2.all.js"); ?>"></script>
 
 </body>

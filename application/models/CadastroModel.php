@@ -37,5 +37,22 @@ class CadastroModel extends CI_Model {
         $linhaRG = $this->db->get("Usuario")->row_array();
         return $linhaRG;
     }
+
+    public function CadastrarItem($dados, $fotos)
+	{       
+        if(count($fotos) > 0)//se veio img
+       {
+            for ($i=0; $i < count($fotos); $i++){
+                $nome_foto = $fotos[$i];
+                $data = [
+                    'nome_produto' => $dados['nome_produto'],
+                    'descricao' => $dados['descricao'],
+                    'preco' => $dados['preco'],
+                    'nome_imagem' => $nome_foto
+                ];
+                return $this->db->insert('produtos',$data);
+            }
+       }
+	}
 }
 ?>

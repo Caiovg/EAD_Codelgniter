@@ -19,5 +19,8 @@ class Welcome extends CI_Controller {
 	{
 		$this->load->view('Telaprodutos');
 	}
-
+	public function telacliente()
+	{
+		$this->load->view('Telacliente');
+	}
 }
